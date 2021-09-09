@@ -49,7 +49,7 @@ const updateNote = async (req, res) => {
   try {
     const noteID = req.params.id;
     const { title, body, label, color, pinned } = req.body;
-    const filter = await Note.findOne({ _id: noteID });
+    const filter = { _id: noteID };
     const update = {
       title,
       body,
