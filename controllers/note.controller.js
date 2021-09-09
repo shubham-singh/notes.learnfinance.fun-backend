@@ -33,7 +33,7 @@ const createNote = async (req, res) => {
       pinned
     })
     await newNote.save();
-    res.status(400).json({
+    res.status(200).json({
       success: true,
       note: newNote
     })
