@@ -20,7 +20,7 @@ const notesSchema = new Schema({
     type: String
   },
   pinned: {
-    type: String,
+    type: Boolean,
     default: false
   }
 }, { timestamps: true });
